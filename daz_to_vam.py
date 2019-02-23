@@ -9,7 +9,7 @@ from FbxCommon import *
 SECS_TO_PROCESS = 4
 
 # Rotates the feet when set to True
-USE_HEELS = False
+USE_HEELS = True
 
 # Adds the same animation but backwards (reverses the animation)
 REVERSE = False
@@ -28,7 +28,7 @@ ATOM_NAME = 'Person'
 SCALE_FACTOR_X = 120
 SCALE_FACTOR_Y = 80
 SCALE_FACTOR_Z = 120
-Y_OFFSET = -2.2
+Y_OFFSET = -2.0
 FPS = 60
 
 VAM_BONE_NAMES = {
@@ -109,7 +109,7 @@ class VamFile:
             'startTimestep': '0',
             'stopTimestep': str(animation_length),
             'loopbackTime': '0',
-            'loop': 'true',
+            'loop': 'false',
             'playbackSpeed': '1',
             'triggers': []
         }
